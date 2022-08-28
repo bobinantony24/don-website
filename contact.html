@@ -205,11 +205,12 @@ Author URL: http://w3layouts.com
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $("#submit-form").submit((e)=>{
         e.preventDefault()
         $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbxC4pPG4Sou4mTAEEb_GsR4qpsflBuFg4uHEsdKscwdW8pULMBrQ8z7jwJDB5s96E8W/exec",
+             url:"https://script.google.com/macros/s/AKfycbwBlBxXpSTBqAu9AvW2dWiKGyiIrV6PPhu_Z5BeP64myRfccSdIfOXyVQQ3N50oFIbaRQ/exec",
             data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
